@@ -8,10 +8,10 @@ public class ClassicMode : MonoBehaviour
 {
 
     public SpriteRenderer fillSprite;
-    private bool heldDown = false;
-    private float scale = 0.01f;
-    private float growthRate = 0.01f;
-    private int lives = 2;
+    protected bool heldDown = false;
+    protected float scale = 0.01f;
+    protected float growthRate = 0.01f;
+    protected int lives = 2;
 
     public Colliders fillCollider; //this is required to get information from the Colliders class. Fill is attached to this
     public Scoreboard scoreboard;
@@ -112,7 +112,7 @@ public class ClassicMode : MonoBehaviour
 
     }
 
-    private void AddSpeed()
+    protected void AddSpeed()
     {
         if (scoreboard.GetScore() % 5 == 0)
         {
@@ -120,7 +120,7 @@ public class ClassicMode : MonoBehaviour
         }
     }
 
-    private void ShrinkTop()
+    protected void ShrinkTop()
     {
         if (scoreboard.GetScore() % 10 == 0 && fillCollider.GetTopSprite().transform.localScale.y > 0.1f)
         {
@@ -129,7 +129,7 @@ public class ClassicMode : MonoBehaviour
         }
     }
 
-    private void ShrinkBottom()
+    protected void ShrinkBottom()
     {
         if (scoreboard.GetScore() % 10 == 1 && fillCollider.GetBottomSprite().transform.localScale.y > 0.1f)
         {
@@ -139,7 +139,7 @@ public class ClassicMode : MonoBehaviour
     }
 
 
-    private void RandomizeTop()
+    protected void RandomizeTop()
     {
         SpriteRenderer top = fillCollider.GetTopSprite();
         fillCollider.GetTopSprite().transform.localPosition = new Vector3(top.transform.localPosition.x, Random.Range(0, 0.25f), 1); 
@@ -149,7 +149,7 @@ public class ClassicMode : MonoBehaviour
     }
 
 
-    private void RandomizeBottom()
+    protected void RandomizeBottom()
     {
         SpriteRenderer bottom = fillCollider.GetBottomSprite();
         fillCollider.GetBottomSprite().transform.localPosition = new Vector3(bottom.transform.localPosition.x, Random.Range(-0.5f, -0.25f), 1);
@@ -158,7 +158,7 @@ public class ClassicMode : MonoBehaviour
 
     }
 
-    private void YouLose()
+    protected void YouLose()
     {
         
         
@@ -183,6 +183,7 @@ public class ClassicMode : MonoBehaviour
             StartCoroutine(GameOver());
 
             
+
 
             
 
