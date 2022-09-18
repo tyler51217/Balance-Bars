@@ -45,7 +45,7 @@ public class GameOverScreen : MonoBehaviour
 
     public void RestartButton()
     {
-        SceneManager.LoadScene("Game1"); //change this to current scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 
     public void ExitButton()

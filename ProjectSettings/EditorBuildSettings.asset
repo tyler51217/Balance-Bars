@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/GameChaos.unity
+    guid: 282205cc9527cd44ba702bad3f34992b
+  - enabled: 1
+    path: Assets/Scenes/ChaosThrees.unity
+    guid: 14aaf169cad79764eac1a04fe4e018f7
   m_configObjects: {}

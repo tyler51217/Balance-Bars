@@ -13,12 +13,12 @@ public class MainMenu : MonoBehaviour
 
     public void ChaosButton()
     {
-
+        SceneManager.LoadScene("GameChaos");
     }
 
     public void ChaosThreesButton()
     {
-        
+        SceneManager.LoadScene("ChaosThrees");
     }
 
     public void ShopButton()
