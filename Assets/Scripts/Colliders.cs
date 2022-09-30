@@ -5,8 +5,8 @@ using UnityEngine;
 public class Colliders : MonoBehaviour
 {
 
-    private bool inTop = false;
-    private bool inBottom = false;
+    private bool inTop;
+    private bool inBottom;
 
     public SpriteRenderer topSprite;
     public SpriteRenderer bottomSprite;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
@@ -8,10 +9,10 @@ public class ClassicMode : MonoBehaviour
 {
 
     public SpriteRenderer fillSprite;
-    protected bool heldDown = false;
-    protected float scale = 0.01f;
-    protected float growthRate = 0.01f;
-    protected int lives = 2;
+    protected bool heldDown;
+    protected float scale;
+    protected float growthRate;
+    //protected int lives;
 
     public Colliders fillCollider; //this is required to get information from the Colliders class. Fill is attached to this
     public Scoreboard scoreboard;
@@ -19,28 +20,49 @@ public class ClassicMode : MonoBehaviour
     
     public GameOverScreen gameOverScreen;
 
+    public bool gameStarted;
+    public EventTrigger gameButton;
 
-    void Start()
+
+    protected void Start()
     {
         QualitySettings.vSyncCount = 0; // this DOES affect mobile games and whoever said it doesnt is a liar
         Application.targetFrameRate = 60;
+
+        heldDown = false;
+        scale = 0.01f;
+        growthRate = 0.01f;
+        //lives = 2;
+
     }
 
-    void Update()
+    protected void Update()
     {
         
 
-        if (heldDown)
-        { 
-            scale += growthRate;
-            fillSprite.transform.localScale = new Vector3(1, scale, 1);
-        }
-        else
+        if (heldDown && fillSprite.transform.localScale.y >= 1)
         {
-            scale -= growthRate;
-            fillSprite.transform.localScale = new Vector3(1, scale, 1);
+            return;
+        }
+        if(!heldDown && fillSprite.transform.localScale.y <= 0)
+        {
+            return;
         }
 
+        var sign = heldDown ? 1 : -1;
+        scale += sign * growthRate;
+
+        fillSprite.transform.localScale = new Vector3(1, scale, 1);
+
+
+
+
+
+
+
+
+
+        /*
 
         if (fillSprite.transform.localScale.y >= 1)
         {
@@ -55,14 +77,54 @@ public class ClassicMode : MonoBehaviour
             return;
         }
 
-
+        */
 
 
     }
 
 
-    public void OnPress()
+    public void OnButtonChange()
     {
+        gameStarted = true;
+
+        if(fillCollider.GetInTop() && heldDown || fillCollider.GetInBottom() && !heldDown)
+        {
+            scoreboard.AddScore();
+        }
+        else
+        {
+            YouLose();
+        }
+
+        if (Lives.GetHealth() <= 0)
+        {
+            return;
+        }
+
+        AddSpeed();
+        ShrinkTop();
+        ShrinkBottom();
+
+        if (!heldDown)
+        {
+            RandomizeBottom();
+        }
+        if (heldDown)
+        {
+            RandomizeTop();
+        }
+
+        heldDown = !heldDown;
+
+
+
+
+
+
+
+
+
+        /*
         heldDown = true;
         
         if(fillCollider.GetInBottom() == true)
@@ -82,42 +144,20 @@ public class ClassicMode : MonoBehaviour
             ShrinkBottom();
             RandomizeBottom();
         }
-
+        */
     }
 
 
-    public void OnRelease()
+    
+
+    protected virtual void AddSpeed()
     {
-        heldDown = false;
-        
-        if(fillCollider.GetInTop() == true)
+        if (scoreboard.GetScore() % 5 != 0)
         {
-            scoreboard.AddScore();
-        }
-        else
-        {
-            
-            YouLose();
+            return;
         }
 
-
-        if (lives >= 0)
-        {
-            AddSpeed();
-            ShrinkTop();
-            ShrinkBottom();
-            RandomizeTop();
-        }
-        
-
-    }
-
-    protected void AddSpeed()
-    {
-        if (scoreboard.GetScore() % 5 == 0)
-        {
-            growthRate = growthRate + 0.001f;
-        }
+        growthRate = growthRate + 0.001f;
     }
 
     protected void ShrinkTop()
@@ -160,23 +200,33 @@ public class ClassicMode : MonoBehaviour
 
     protected void YouLose()
     {
+        //Debug.Log(Lives.GetHealth());
         
-        
-        string temp = "FullHeart (" + lives + ")";
+        string temp = "FullHeart (" + Lives.LoseHealth() + ")";
         GameObject h = GameObject.Find(temp);
 
         h.SetActive(false);
-
+        
             
 
 
-        lives = lives - 1;
+        //lives -= 1;
         
 
-        if (lives < 0)
+        if (Lives.GetHealth() <= 0)
         {
-            Button b = GetComponentInChildren<Button>(); // works
-            b.gameObject.SetActive(false);
+            GameObject [] objs;
+
+            objs = GameObject.FindGameObjectsWithTag("ButtonTag");
+            
+
+            foreach(GameObject button in objs)
+            {
+                button.SetActive(false);
+            }
+
+            //Button b = GetComponentInChildren<Button>(); // works
+            //b.gameObject.SetActive(false);
             growthRate = 0;
 
 
@@ -201,11 +251,12 @@ public class ClassicMode : MonoBehaviour
         gameOverScreen.Setup(scoreboard.GetScore());
     }
 
+    /*
     public int GetLives()
     {
         return lives;
     }
-
+    */
 
 
 

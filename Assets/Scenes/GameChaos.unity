@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 54872038}
   - component: {fileID: 54872037}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PointsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 129925060}
   - component: {fileID: 129925059}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1026,7 +1026,7 @@ GameObject:
   - component: {fileID: 842536584}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: ButtonTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1069,8 +1069,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1366556057}
-          m_TargetAssemblyTypeName: ChaosMode, Assembly-CSharp
-          m_MethodName: OnPress
+          m_TargetAssemblyTypeName: ClassicMode, Assembly-CSharp
+          m_MethodName: OnButtonChange
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1085,8 +1085,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1366556057}
-          m_TargetAssemblyTypeName: ChaosMode, Assembly-CSharp
-          m_MethodName: OnRelease
+          m_TargetAssemblyTypeName: ClassicMode, Assembly-CSharp
+          m_MethodName: OnButtonChange
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1272,7 +1272,7 @@ GameObject:
   - component: {fileID: 1203010524}
   - component: {fileID: 1203010523}
   m_Layer: 5
-  m_Name: Text
+  m_Name: MainMenuText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1654,7 +1654,7 @@ GameObject:
   - component: {fileID: 1419730614}
   - component: {fileID: 1419730613}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TryAgainText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1914,7 +1914,7 @@ GameObject:
   - component: {fileID: 1698672554}
   - component: {fileID: 1698672553}
   m_Layer: 5
-  m_Name: Button
+  m_Name: TryAgainButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2155,7 +2155,7 @@ GameObject:
   - component: {fileID: 2010665543}
   - component: {fileID: 2010665542}
   m_Layer: 5
-  m_Name: Text
+  m_Name: GameOverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2234,7 +2234,7 @@ GameObject:
   - component: {fileID: 2067615371}
   - component: {fileID: 2067615370}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

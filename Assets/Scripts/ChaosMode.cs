@@ -7,125 +7,41 @@ using UnityEngine.UI;
 public class ChaosMode : ClassicMode //i believe inheritence can inherit monobehavior like this
 {
 
-    protected float speed = 0f;
+    protected float speed;
+    protected float minRandom;
+    protected float maxRandom;
 
-
-
-
-    void Update()
+    new void Start()
     {
+        base.Start();
 
-
-        if (heldDown)
-        {
-            scale += growthRate;
-            fillSprite.transform.localScale = new Vector3(1, scale, 1);
-        }
-        else
-        {
-            scale -= growthRate;
-            fillSprite.transform.localScale = new Vector3(1, scale, 1);
-        }
-
-
-        if (fillSprite.transform.localScale.y >= 1)
-        {
-            fillSprite.transform.localScale = new Vector3(1, 1, 1);
-            scale -= growthRate;
-            return;
-        }
-        if (fillSprite.transform.localScale.y <= 0)
-        {
-            fillSprite.transform.localScale = new Vector3(1, 0.01f, 1);
-            scale += growthRate;
-            return;
-        }
-
-
-
-
+        speed = 0f;
+        minRandom = 0.005f;
+        maxRandom = 0.02f;
     }
 
-
-    public void OnPress()
+    new void Update()
     {
-        heldDown = true;
-
-        if (fillCollider.GetInBottom() == true)
-        {
-            scoreboard.AddScore();
-        }
-        else
-        {
-
-            YouLose();
-        }
-
-        if (lives >= 0)
-        {
-            RandomizeSpeed();
-            ShrinkTop();
-            ShrinkBottom();
-            RandomizeBottom();
-        }
+        base.Update();
 
     }
-
-
-    public void OnRelease()
-    {
-        heldDown = false;
-
-        if (fillCollider.GetInTop() == true)
-        {
-            scoreboard.AddScore();
-        }
-        else
-        {
-
-            YouLose();
-        }
-
-
-        if (lives >= 0)
-        {
-            RandomizeSpeed();
-            ShrinkTop();
-            ShrinkBottom();
-            RandomizeTop();
-        }
-
-
-    }
-
-    protected void RandomizeSpeed()
-    {
-        if (scoreboard.GetScore() % 5 == 0)
-        {
-            speed = speed + 0.001f;
-
-        }
-
-        growthRate = Random.Range(speed + 0.01f, speed + 0.015f);
-    }
-
 
 
     
+    
 
-
-
-
-
-
-
-    IEnumerator GameOver()
+    protected override void AddSpeed() //randomize speed because chaos mode
     {
-        yield return new WaitForSeconds(1.2f);
-        gameOverScreen.Setup(scoreboard.GetScore());
+        if (scoreboard.GetScore() % 5 == 0)
+        {
+            if (speed < 0.01f)
+            {
+                speed += 0.001f;
+            }
+            
+        }
+
+        growthRate = Random.Range(speed + minRandom, speed + maxRandom);
     }
-
-
-
 
 }

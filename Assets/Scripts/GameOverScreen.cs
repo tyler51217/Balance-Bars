@@ -45,11 +45,13 @@ public class GameOverScreen : MonoBehaviour
 
     public void RestartButton()
     {
+        Lives.SetHealth(3);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 
     public void ExitButton()
     {
+        Lives.SetHealth(3);
         SceneManager.LoadScene("MainMenu");
     }
 

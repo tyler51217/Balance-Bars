@@ -6,7 +6,7 @@ public class Zoom : MonoBehaviour
 {
     Camera mainCamera;
 
-    float zoomModifierSpeed = -0.2f;
+    float zoomModifierSpeed;
 
     public SpriteRenderer fillSprite;
 
@@ -16,8 +16,9 @@ public class Zoom : MonoBehaviour
     void Start()
     {
         mainCamera = GetComponent<Camera>();
-        
-        
+        zoomModifierSpeed = -0.2f;
+
+
     }
 
     private void Awake()
@@ -28,7 +29,7 @@ public class Zoom : MonoBehaviour
     void Update()
     {
         
-        if (classicMode.GetLives() < 0)
+        if (Lives.GetHealth() <= 0)
         {
             mainCamera.orthographicSize += zoomModifierSpeed;
 

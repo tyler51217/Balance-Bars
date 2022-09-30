@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 48264634}
   - component: {fileID: 48264633}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -607,7 +607,7 @@ GameObject:
   - component: {fileID: 422014395}
   - component: {fileID: 422014394}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PointsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -866,7 +866,7 @@ GameObject:
   - component: {fileID: 597085502}
   - component: {fileID: 597085501}
   m_Layer: 5
-  m_Name: Text
+  m_Name: GameOverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1203,7 +1203,7 @@ GameObject:
   - component: {fileID: 1112380614}
   - component: {fileID: 1112380613}
   m_Layer: 5
-  m_Name: Button
+  m_Name: TryAgainButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1417,7 +1417,7 @@ GameObject:
   - component: {fileID: 1176351600}
   - component: {fileID: 1176351599}
   m_Layer: 5
-  m_Name: Text
+  m_Name: MainMenuText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1497,7 +1497,7 @@ GameObject:
   - component: {fileID: 1195230321}
   - component: {fileID: 1195230320}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1823,7 +1823,7 @@ GameObject:
   - component: {fileID: 1514873065}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: ButtonTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1948,8 +1948,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 349398282}
-          m_TargetAssemblyTypeName: Bars, Assembly-CSharp
-          m_MethodName: OnPress
+          m_TargetAssemblyTypeName: ClassicMode, Assembly-CSharp
+          m_MethodName: OnButtonChange
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1964,8 +1964,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 349398282}
-          m_TargetAssemblyTypeName: Bars, Assembly-CSharp
-          m_MethodName: OnRelease
+          m_TargetAssemblyTypeName: ClassicMode, Assembly-CSharp
+          m_MethodName: OnButtonChange
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2218,7 +2218,7 @@ GameObject:
   - component: {fileID: 1778758239}
   - component: {fileID: 1778758238}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TryAgainText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

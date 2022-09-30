@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Top
   - Bottom
+  - ButtonTag
   layers:
   - Default
   - TransparentFX

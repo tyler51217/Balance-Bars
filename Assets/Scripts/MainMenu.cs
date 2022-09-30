@@ -8,24 +8,43 @@ public class MainMenu : MonoBehaviour
     
     public void ClassicButton()
     {
-        SceneManager.LoadScene("Game1");
+        LoadTheScene("Game1");
     }
 
     public void ChaosButton()
     {
-        SceneManager.LoadScene("GameChaos");
+        LoadTheScene("GameChaos");
+    }
+
+    public void ClassicTwosButton()
+    {
+
+    }
+
+    public void ChaosTwosButton()
+    {
+
+    }
+
+    public void ClassicThreesButton()
+    {
+
     }
 
     public void ChaosThreesButton()
     {
-        SceneManager.LoadScene("ChaosThrees");
+        LoadTheScene("ChaosThrees");
     }
 
     public void ShopButton()
     {
-
+        //LoadTheScene("Shop");
     }
 
+    private void LoadTheScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 
 
 }
