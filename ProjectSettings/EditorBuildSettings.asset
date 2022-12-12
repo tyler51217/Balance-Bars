@@ -15,6 +15,18 @@ EditorBuildSettings:
     path: Assets/Scenes/GameChaos.unity
     guid: 282205cc9527cd44ba702bad3f34992b
   - enabled: 1
+    path: Assets/Scenes/ClassicTwos.unity
+    guid: 08bb45ea25b07a749a833c5da75600e2
+  - enabled: 1
+    path: Assets/Scenes/ChaosTwos.unity
+    guid: bcfa5b2f715f8f24a917539be1c9b493
+  - enabled: 1
+    path: Assets/Scenes/ClassicThrees.unity
+    guid: 633a46aa9bb9cd04991dc4fbf77e9404
+  - enabled: 1
     path: Assets/Scenes/ChaosThrees.unity
     guid: 14aaf169cad79764eac1a04fe4e018f7
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 2de17af9731ad9b498bc9059a8e5f9a3
   m_configObjects: {}

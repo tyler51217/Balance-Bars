@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine;
 
-public class TimingManager : MonoBehaviour
+public class TimingManager : MonoBehaviour //timing manager is required for gamemodes with multiple bars
 {
     
     public List<ClassicMode> gamesList;

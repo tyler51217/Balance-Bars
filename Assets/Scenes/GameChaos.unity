@@ -199,8 +199,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 280}
-  m_SizeDelta: {x: 650, y: 200}
+  m_AnchoredPosition: {x: 0, y: 265.00003}
+  m_SizeDelta: {x: 650, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &129925057
 GameObject:
@@ -1471,6 +1471,8 @@ MonoBehaviour:
   fillCollider: {fileID: 730416865}
   scoreboard: {fileID: 1366556056}
   gameOverScreen: {fileID: 571854589}
+  gameStarted: 0
+  gameButton: {fileID: 0}
 --- !u!114 &1366556058
 MonoBehaviour:
   m_ObjectHideFlags: 0

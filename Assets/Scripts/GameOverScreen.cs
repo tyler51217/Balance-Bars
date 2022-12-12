@@ -30,6 +30,13 @@ public class GameOverScreen : MonoBehaviour
         
         gameObject.SetActive(true);
         
+        if(score > PlayerPrefs.GetInt("highScore" + SceneManager.GetActiveScene().name))
+        {
+            PlayerPrefs.SetInt("highScore" + SceneManager.GetActiveScene().name, score);
+        }
+
+        
+
 
         //gameObject.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, 0));//this doesnt work as intended
         //i want to put the top of this to the bottom of the main camera
@@ -39,6 +46,8 @@ public class GameOverScreen : MonoBehaviour
 
 
         pointsText.text = score.ToString() + " Points";
+        pointsText.text += "\nHigh Score:\n";
+        pointsText.text += PlayerPrefs.GetInt("highScore" + SceneManager.GetActiveScene().name) + " Points";
 
         
     }

@@ -18,17 +18,17 @@ public class MainMenu : MonoBehaviour
 
     public void ClassicTwosButton()
     {
-
+        LoadTheScene("ClassicTwos");
     }
 
     public void ChaosTwosButton()
     {
-
+        LoadTheScene("ChaosTwos");
     }
 
     public void ClassicThreesButton()
     {
-
+        LoadTheScene("ClassicThrees");
     }
 
     public void ChaosThreesButton()
@@ -38,7 +38,7 @@ public class MainMenu : MonoBehaviour
 
     public void ShopButton()
     {
-        //LoadTheScene("Shop");
+        LoadTheScene("Shop");
     }
 
     private void LoadTheScene(string sceneName)
