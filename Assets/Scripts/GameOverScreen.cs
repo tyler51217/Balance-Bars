@@ -30,12 +30,9 @@ public class GameOverScreen : MonoBehaviour
         
         gameObject.SetActive(true);
         
-        if(!PlayerPrefs.HasKey("highScore" + SceneManager.GetActiveScene().name))
-        {
-            PlayerPrefs.SetInt("highScore" + SceneManager.GetActiveScene().name, 0);
-        }
+        
 
-        if(score > PlayerPrefs.GetInt("highScore" + SceneManager.GetActiveScene().name))
+        if(score > PlayerPrefs.GetInt("highScore" + SceneManager.GetActiveScene().name, 0))
         {
             PlayerPrefs.SetInt("highScore" + SceneManager.GetActiveScene().name, score);
         }
