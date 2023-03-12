@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class ClassicMode : MonoBehaviour
+public class ClassicMode : MonoBehaviour, IDataPersistence
 {
 
     public SpriteRenderer fillSprite;
@@ -249,6 +249,7 @@ public class ClassicMode : MonoBehaviour
     {
         yield return new WaitForSeconds(1.2f);
         gameOverScreen.Setup(scoreboard.GetScore());
+        
     }
 
     /*
@@ -258,7 +259,15 @@ public class ClassicMode : MonoBehaviour
     }
     */
 
+    public void LoadData(GameData data)
+    {
+        
+    }
 
+    public void SaveData(ref GameData data)
+    {
+        data.coins += scoreboard.GetScore();
+    }
 
 
 }
