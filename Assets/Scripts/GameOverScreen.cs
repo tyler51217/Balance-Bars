@@ -63,6 +63,7 @@ public class GameOverScreen : MonoBehaviour
     public void ExitButton()
     {
         Lives.SetHealth(3);
+        
         SceneManager.LoadScene("MainMenu");
     }
 

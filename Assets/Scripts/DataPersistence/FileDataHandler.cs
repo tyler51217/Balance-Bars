@@ -32,7 +32,7 @@ public class FileDataHandler
                         dataToLoad = reader.ReadToEnd();
                     }
                 }
-                //deserialize from jsopn to c# GameData
+                //deserialize from json to c# GameData
                 loadedData = JsonUtility.FromJson<GameData>(dataToLoad);
 
 

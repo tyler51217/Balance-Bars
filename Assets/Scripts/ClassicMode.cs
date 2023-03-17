@@ -23,7 +23,7 @@ public class ClassicMode : MonoBehaviour, IDataPersistence
     public bool gameStarted;
     public EventTrigger gameButton;
 
-
+    
     protected void Start()
     {
         QualitySettings.vSyncCount = 0; // this DOES affect mobile games and whoever said it doesnt is a liar
@@ -261,7 +261,7 @@ public class ClassicMode : MonoBehaviour, IDataPersistence
 
     public void LoadData(GameData data)
     {
-        
+        //load the selected skin(s)
     }
 
     public void SaveData(ref GameData data)
@@ -269,5 +269,6 @@ public class ClassicMode : MonoBehaviour, IDataPersistence
         data.coins += scoreboard.GetScore();
     }
 
+    
 
 }
