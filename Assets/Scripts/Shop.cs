@@ -9,7 +9,8 @@ public class Shop : MonoBehaviour, IDataPersistence
     private int coins;
     public Text coinsText;
     public ShopItem currentlySelected;
-    public List<ShopItem> ownedShopItems = new List<ShopItem>();
+    //public List<ShopItem> ownedShopItems;
+    public List<int> ownedShopIDs;
     public void Start()
     {
         coinsText.text = coins.ToString() + " coins";
@@ -20,13 +21,15 @@ public class Shop : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         this.coins = data.coins;
-        this.ownedShopItems = data.ownedShopItems;
+        //this.ownedShopItems = data.ownedShopItems;
+        this.ownedShopIDs = data.ownedShopIDs;
     }
 
     public void SaveData(ref GameData data)
     {
         data.coins = this.coins;
-        data.ownedShopItems = this.ownedShopItems;
+        //data.ownedShopItems = this.ownedShopItems;
+        data.ownedShopIDs = this.ownedShopIDs;
     }
 
 
@@ -44,9 +47,9 @@ public class Shop : MonoBehaviour, IDataPersistence
         }
         */
         bool a = false;
-        for (int i = 0; i < ownedShopItems.Count; i++)
+        for (int i = 0; i < ownedShopIDs.Count; i++)
         {
-            if (item == ownedShopItems[i])
+            if (item.id == ownedShopIDs[i])
             {
                 Debug.Log("already own: " + item.name);
                 a = true;
@@ -64,7 +67,8 @@ public class Shop : MonoBehaviour, IDataPersistence
             coins -= item.cost;
             coinsText.text = coins.ToString() + " coins";
             item.owned = true;
-            ownedShopItems.Add(item);
+            //ownedShopItems.Add(item);
+            ownedShopIDs.Add(item.id);
         }
         else
         {

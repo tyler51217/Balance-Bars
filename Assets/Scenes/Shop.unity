@@ -331,7 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   owned: 0
   sprite: {fileID: 21300000, guid: b0c970f1df4294f4aadd028181aff096, type: 3}
-  id: 0
+  id: 1
   cost: 5
   name: first item
 --- !u!212 &863489724
@@ -455,7 +455,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Purchase
 --- !u!222 &1154315305
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -823,3 +823,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinsText: {fileID: 532263920}
   currentlySelected: {fileID: 0}
+  ownedShopItems: []
