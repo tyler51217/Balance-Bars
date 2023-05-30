@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class MainMenuSliding : MonoBehaviour
 {
-    public List <Button> buttons;
 
     public List<GameObject> panels;
 
@@ -16,21 +15,24 @@ public class MainMenuSliding : MonoBehaviour
     Vector3 fastTarget = new Vector3(10f, 1.5f);
 
     Vector3 velocity = Vector3.zero;
-    Vector3 targetPosition = new Vector3(-Screen.width, 0, 0);
+    Vector3 targetPosition = new Vector3(Screen.width, 0, 0);
+
+    
 
     public void ForwardButton()
     {
         Debug.Log(Screen.width);
-
         
+
 
 
         for (int i = 0; i < panels.Count; i++)
         {
-            //panels[i].transform.position = panels[i].transform.position + new Vector3(-Screen.width, 0, 0);
+            
 
-            //panels[i].transform.position = Vector3.SmoothDamp(gameObject.transform.position, targetPosition, ref velocity, targetTime);
-            StartCoroutine(SmoothMove(panels[i].transform.position, new Vector3 (panels[i].transform.position.x - Screen.width, panels[i].transform.position.y, panels[i].transform.position.z), targetTime));
+            //StartCoroutine(SmoothMove(panels[i].transform.position, new Vector3 (panels[i].transform.position.x - Screen.width, panels[i].transform.position.y, panels[i].transform.position.z), targetTime));
+
+            StartCoroutine(SmoothMove(panels[i].transform.position, new Vector3 (panels[i].transform.position.x - targetPosition.x, panels[i].transform.position.y, panels[i].transform.position.z), targetTime));
             //^ there may be a more efficient way to do this 
         }
 

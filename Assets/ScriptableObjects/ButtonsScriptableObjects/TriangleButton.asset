@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0c29d7fd35761c42b177c1bf55374df, type: 3}
+  m_Name: TriangleButton
+  m_EditorClassIdentifier: 
+  id: 4
+  cost: 40
+  name: Triangle
+  owned: 0
+  sprite: {fileID: 21300000, guid: 2c98f199042be374da01d1a8f8e48d55, type: 3}

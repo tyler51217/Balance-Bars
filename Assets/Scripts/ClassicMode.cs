@@ -24,16 +24,16 @@ public class ClassicMode : MonoBehaviour, IDataPersistence
     public EventTrigger gameButton;
 
     
+    
     protected void Start()
     {
-        QualitySettings.vSyncCount = 0; // this DOES affect mobile games and whoever said it doesnt is a liar
+        QualitySettings.vSyncCount = 0; // this DOES affect mobile games
         Application.targetFrameRate = 60;
 
         heldDown = false;
         scale = 0.01f;
         growthRate = 0.01f;
         //lives = 2;
-
     }
 
     protected void Update()
@@ -87,7 +87,7 @@ public class ClassicMode : MonoBehaviour, IDataPersistence
     {
         gameStarted = true;
 
-        if(fillCollider.GetInTop() && heldDown || fillCollider.GetInBottom() && !heldDown)
+        if((fillCollider.GetInTop() && heldDown) || (fillCollider.GetInBottom() && !heldDown))
         {
             scoreboard.AddScore();
         }

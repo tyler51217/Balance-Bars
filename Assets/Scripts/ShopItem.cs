@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-
-public class ShopItem : MonoBehaviour
+[CreateAssetMenu(fileName ="ShopItem", menuName ="ScriptableObjects/ShopItem")]
+public class ShopItem : ScriptableObject
 {
-
-    public bool owned;
-    //public bool currentlySelected;
-    //private SpriteRenderer spriteR;
-    public Sprite sprite;
     public int id;
     public int cost;
-    public string name;
+    public new string name;
+    public bool owned;
+    public Sprite sprite;
 
 
 

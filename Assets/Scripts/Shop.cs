@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,79 +9,136 @@ public class Shop : MonoBehaviour, IDataPersistence
 
     private int coins;
     public Text coinsText;
-    public ShopItem currentlySelected;
-    //public List<ShopItem> ownedShopItems;
-    public List<int> ownedShopIDs;
+    
+    public static List<int> ownedShopIds;
+
+    //public string equippedButtonSkinName;
+    //public string equippedColorName;
+
+    
+    
+
     public void Start()
     {
         coinsText.text = coins.ToString() + " coins";
+        //change all the owned shop buttons to say equip instead
+
+        //read json and change the scriptable objects for their bool to be owned or not
         
         
     }
 
     public void LoadData(GameData data)
     {
+        Debug.Log("Shop load called");
         this.coins = data.coins;
-        //this.ownedShopItems = data.ownedShopItems;
-        this.ownedShopIDs = data.ownedShopIDs;
+        Shop.ownedShopIds = data.ownedShopIds;
     }
 
-    public void SaveData(ref GameData data)
+    public void SaveData(ref GameData data) //WE MADE SKINSAVER AND THAT IS ON DATAPERSISTENCEMANAGER GAME OBJECT BECAUSE WE ONLY WANT TO MODIFY EQUIPPED SKINS ONCE, WHILE THEY
+        //WERE ON THIS SHOP CLASS, ATTTACHED TO EVERY SHOPITEM, IT WOULD RUN SAVE MULTIPLE TIMES AND OVERWRITE ITS OWN DATA
     {
         data.coins = this.coins;
-        //data.ownedShopItems = this.ownedShopItems;
-        data.ownedShopIDs = this.ownedShopIDs;
+        ownedShopIds.Sort();
+        ownedShopIds = ownedShopIds.Distinct().ToList();// remove duplicate check here
+
+        data.ownedShopIds = Shop.ownedShopIds;
+
+        //Debug.Log(equippedButtonSkinName);
+        
+
+        
+        Debug.Log("Saved data from Shop");
+        //data.equippedButtonSkinId = this.equippedButtonSkinId;
+        //data.equippedColorId = this.equippedColourId;
+        
+
     }
 
 
-    public void Purchase(ShopItem item) //probably needs a parameter for what to purchase
+
+    public void PurchaseButton(ShopItem item)
     {
-        /*
-        if (!item.owned)
+        
+
+        //iterate through the owned shop items
+        for (int i = 0; i < ownedShopIds.Count; i++)
         {
-            item.owned = true;
-            coins -= item.cost;
-        }
-        else
-        {
-            item.currentlySelected = true;
-        }
-        */
-        bool a = false;
-        for (int i = 0; i < ownedShopIDs.Count; i++)
-        {
-            if (item.id == ownedShopIDs[i])
+            if(item.id == ownedShopIds[i])
             {
-                Debug.Log("already own: " + item.name);
-                a = true;
-                break;
+                item.owned = true;
             }
+        }
+
+        
+
+        if (item.owned)
+        {
+            //equip item here
+            //equippedButtonSkinId = item.id;
+            SkinSaver.ebsn = item.name + "Button";
+            
+            //need to change this to account for colours too, not just buttons
+
+            //Debug.Log("equippedButtonSkinName is now " + equippedButtonSkinName);
             
         }
-        if (a)
-        {
+        
 
-        }
-        else if(item.cost < coins)
+        else if (item.cost <= this.coins)
         {
-            Debug.Log("bought " + item.name + " for " + item.cost + " coins");
-            coins -= item.cost;
-            coinsText.text = coins.ToString() + " coins";
+            Debug.Log("You have purchased " + item.name);
+            this.coins -= item.cost;
             item.owned = true;
-            //ownedShopItems.Add(item);
-            ownedShopIDs.Add(item.id);
+            ownedShopIds.Add(item.id);
+            coinsText.text = coins.ToString() + " coins";
+            
+
         }
-        else
+        else if (item.cost > this.coins)
         {
-            Debug.Log("cannot afford " + item.name);
+            Debug.Log("Cannot afford " + item.name);
+        }
+    }
+
+    public void PurchaseColor(ShopColor item)
+    {
+        //iterate through the owned shop items
+        for (int i = 0; i < ownedShopIds.Count; i++)
+        {
+            if (item.id == ownedShopIds[i])
+            {
+                item.owned = true;
+            }
         }
 
 
-        
 
-        
+        if (item.owned)
+        {
+            //equip item here
+            //equippedButtonSkinId = item.id;
+            SkinSaver.ecn = item.name + "Color";
+            
+            //need to change this to account for colours too, not just buttons
+            //Debug.Log("equippedColorName is now " + equippedColorName);
+        }
 
 
+        else if (item.cost < this.coins)
+        {
+            Debug.Log("You have purchased " + item.name);
+            this.coins -= item.cost;
+            item.owned = true;
+            ownedShopIds.Add(item.id);
+            coinsText.text = coins.ToString() + " coins";
+
+
+        }
+        else if (item.cost > this.coins)
+        {
+            Debug.Log("Cannot afford " + item.name);
+        }
     }
 
 

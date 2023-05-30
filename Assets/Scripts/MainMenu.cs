@@ -5,38 +5,39 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private string gameType = "Classic";
+    private string gameMode = "Singles";
+
     
-
-    public void ClassicButton()
+    public void toClassic()
     {
-        LoadTheScene("Game1");
+        gameType = "Classic";
     }
 
-    public void ChaosButton()
+    public void toChaos()
     {
-        LoadTheScene("GameChaos");
+        gameType = "Chaos";
     }
 
-    public void ClassicTwosButton()
+    public void toSingles()
     {
-        LoadTheScene("ClassicTwos");
+        gameMode = "Ones";
     }
 
-    public void ChaosTwosButton()
+    public void toDoubles()
     {
-        LoadTheScene("ChaosTwos");
+        gameMode = "Twos";
     }
 
-    public void ClassicThreesButton()
+    public void toTriples()
     {
-        LoadTheScene("ClassicThrees");
+        gameMode = "Threes";
     }
 
-    public void ChaosThreesButton()
+    public void PlayButton()
     {
-        LoadTheScene("ChaosThrees");
+        SceneManager.LoadScene(gameType + gameMode);
     }
-
     public void ShopButton()
     {
         LoadTheScene("Shop");

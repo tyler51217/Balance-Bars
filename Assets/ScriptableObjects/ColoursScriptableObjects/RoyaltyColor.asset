@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 420a84cd31bcd3b4c983bb6780edc3dd, type: 3}
+  m_Name: RoyaltyColor
+  m_EditorClassIdentifier: 
+  id: 117
+  cost: 200
+  name: Royalty
+  owned: 0
+  sprite: {fileID: 21300000, guid: c9c09a32e85bb6645a0f411af0424269, type: 3}
+  color: {r: 0.48235294, g: 0, b: 0.65882355, a: 1}
