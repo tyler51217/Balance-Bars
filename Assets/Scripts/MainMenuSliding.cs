@@ -30,29 +30,16 @@ public class MainMenuSliding : MonoBehaviour
         {
             
 
-            //StartCoroutine(SmoothMove(panels[i].transform.position, new Vector3 (panels[i].transform.position.x - Screen.width, panels[i].transform.position.y, panels[i].transform.position.z), targetTime));
+            
 
             StartCoroutine(SmoothMove(panels[i].transform.position, new Vector3 (panels[i].transform.position.x - targetPosition.x, panels[i].transform.position.y, panels[i].transform.position.z), targetTime));
             //^ there may be a more efficient way to do this 
         }
 
 
+        
 
-
-        //panels[i].transform.position = Vector3.SmoothDamp(gameObject.transform.position, targetPosition, ref velocity, targetTime);
-
-        //while(currentPanel < panels.Count)
-        //{
-        //    panels[currentPanel].transform.position = panels[currentPanel].transform.position + new Vector3(-Screen.width, 0, 0);
-        //    currentPanel++;
-        //}
-
-        //panels[currentPanel].transform.position = panels[currentPanel].transform.position + new Vector3(-Screen.width, 0, 0);
-        //panels[currentPanel+1].transform.position = panels[currentPanel+1].transform.position + new Vector3(-Screen.width, 0, 0);
-
-        //panels[currentPanel + 1].transform.position = panels[currentPanel + 1].transform.position + new Vector3(-Screen.currentResolution.width, 0, 0);
-
-        //i didnt even call the coroutine bruh
+        
 
         
 
@@ -62,8 +49,7 @@ public class MainMenuSliding : MonoBehaviour
 
     public void BackwardButton()
     {
-        //panels[currentPanel].transform.position = panels[currentPanel].transform.position + new Vector3(Screen.width, 0, 0);
-        //panels[currentPanel-1].transform.position = panels[currentPanel-1].transform.position + new Vector3(Screen.width, 0, 0);
+        
 
         for (int i = 0; i < panels.Count; i++)
         {

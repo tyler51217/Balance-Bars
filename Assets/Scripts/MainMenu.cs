@@ -8,7 +8,10 @@ public class MainMenu : MonoBehaviour
     private string gameType = "Classic";
     private string gameMode = "Singles";
 
-    
+    public void toMainMenu()
+    {
+        LoadTheScene("MainMenu");
+    }
     public void toClassic()
     {
         gameType = "Classic";
