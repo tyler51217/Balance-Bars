@@ -5,17 +5,17 @@ using UnityEngine.UI;
 
 public class Help : MonoBehaviour
 {
-    public Toggle toggle;
-    private bool IsOn;
+    
+    
 
     private void Start() //only runs when HelpPanel is .SetActive
     {
         
-
+        
         //check playerprefs if open on start
-        if(PlayerPrefs.GetInt("IsOn", 1) == 1)
+        if(PlayerPrefs.GetInt("IsOn", 0) == 0)
         {
-            toggle.isOn = true;
+            
             ShowHelpWindow();
             
         }
@@ -24,39 +24,12 @@ public class Help : MonoBehaviour
             HideHelpWindow();
         }
 
-        Debug.Log("current player pref: " + PlayerPrefs.GetInt("IsOn"));
-        toggle.onValueChanged.AddListener(delegate
-        {
-            ToggleValueChanged(toggle);
-        });
-
-    }
-
-    void ToggleValueChanged(Toggle toggleValue)
-    {
-        Debug.Log("toggle changed");
-
         
-
-        
-
-        if (PlayerPrefs.GetInt("IsOn") == 1)
-        {
-            
-            PlayerPrefs.SetInt("IsOn", 0);
-        }
-        else
-        {
-            
-            PlayerPrefs.SetInt("IsOn", 1);
-            
-        }
-
-        
-
         
 
     }
+
+    
 
 
 
@@ -70,6 +43,7 @@ public class Help : MonoBehaviour
     public void HideHelpWindow()
     {
         gameObject.SetActive(false);
+        PlayerPrefs.SetInt("IsOn", 1);
     }
 
     
