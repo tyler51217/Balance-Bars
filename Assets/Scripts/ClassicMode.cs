@@ -54,32 +54,6 @@ public class ClassicMode : MonoBehaviour, IDataPersistence
 
         fillSprite.transform.localScale = new Vector3(1, scale, 1);
 
-
-
-
-
-
-
-
-
-        /*
-
-        if (fillSprite.transform.localScale.y >= 1)
-        {
-            fillSprite.transform.localScale = new Vector3(1, 1, 1);
-            scale -= growthRate;
-            return;
-        }
-        if (fillSprite.transform.localScale.y <= 0)
-        {
-            fillSprite.transform.localScale = new Vector3(1, 0.01f, 1);
-            scale += growthRate;
-            return;
-        }
-
-        */
-
-
     }
 
 
@@ -115,36 +89,6 @@ public class ClassicMode : MonoBehaviour, IDataPersistence
         }
 
         heldDown = !heldDown;
-
-
-
-
-
-
-
-
-
-        /*
-        heldDown = true;
-        
-        if(fillCollider.GetInBottom() == true)
-        {
-            scoreboard.AddScore();
-        }
-        else
-        {
-            
-            YouLose();
-        }
-
-        if (lives >= 0)
-        {
-            AddSpeed();
-            ShrinkTop();
-            ShrinkBottom();
-            RandomizeBottom();
-        }
-        */
     }
 
 

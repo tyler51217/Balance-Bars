@@ -21,6 +21,98 @@ MonoBehaviour:
     m_Address: BlackColor
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: a1605c46991e5734c989e886431d09bd
+    m_Address: BlueColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ba55ebf2d820c764e91cceb266805d85
+    m_Address: BrickColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d6fd55cab14d9434d933bd5518c38a9a
+    m_Address: BrownColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 621a727056073a546981641acc85527a
+    m_Address: CantaloupeColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b2936cd6afa694041b71fea1395d4690
+    m_Address: CyanColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1f04987eb608abd478c8aa1dd929ec79
+    m_Address: ForestColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4388d41ca8f1c4a40be2d215344046c4
+    m_Address: GreenColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1f3467b01b12b384ca02efed495199a2
+    m_Address: MagentaColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 387e532ec954efa41b003a0008dcb5a9
+    m_Address: MudColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0c54793d4a2f7ad41a636d0183944123
+    m_Address: NavyColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e666d80e551dbec45bec5d3762050501
+    m_Address: OliveColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 436b83c136f51d84d8483ebab240d0d8
+    m_Address: OrangeColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 03e98af7558145d43bd430ae5d7fa6f6
+    m_Address: ParchementColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: acac611af9cbd8f438b59b37d24031c0
+    m_Address: PinkColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: af9fc11d40f4b914b853ed4a7f8b26dd
+    m_Address: PurpleColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a3b92e96618cc4e4c8f1593c057ac913
+    m_Address: RedColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7ee7b5d938280d54d9157fc2dc17c44e
+    m_Address: RoyaltyColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e9256dea4d6b1874186b9019c0ab34d4
+    m_Address: SilverColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8980dd10f816a484fbb480c13d072765
+    m_Address: SkyColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 581aacc0d2074e54a89be70d3b72ac20
+    m_Address: SlateColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 613cf83a1b446cd41a847256b27f4eea
+    m_Address: TanColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1ec297c162650084cb885514628dedfd
+    m_Address: TangerineColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5e1f9646fb6ec0a468fd79b998196f86
+    m_Address: YellowColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: b51b68f60682b02428ae3d2df06b1e3a, type: 2}
   m_SchemaSet:

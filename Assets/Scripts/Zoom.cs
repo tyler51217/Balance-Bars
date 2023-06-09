@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Zoom : MonoBehaviour
 {
@@ -10,14 +11,14 @@ public class Zoom : MonoBehaviour
 
     public SpriteRenderer fillSprite;
 
-    public ClassicMode classicMode;
+    public static SpriteRenderer targetZoom;
 
     
     void Start()
     {
         mainCamera = GetComponent<Camera>();
         zoomModifierSpeed = -0.2f;
-
+        targetZoom = fillSprite;
 
     }
 
@@ -28,17 +29,24 @@ public class Zoom : MonoBehaviour
 
     void Update()
     {
+        //change target position to the most recent fill's button pressed
         
+
+
+        //Vector3 targetPosition = new Vector3(fillSprite.transform.position.x, fillSprite.GetComponent<BoxCollider2D>().bounds.center.y, mainCamera.transform.position.z);
+        Vector3 targetPosition = new Vector3(targetZoom.transform.position.x, targetZoom.GetComponent<BoxCollider2D>().bounds.center.y, mainCamera.transform.position.z);
+
+
         if (Lives.GetHealth() <= 0)
         {
             mainCamera.orthographicSize += zoomModifierSpeed;
 
-            Vector3 targetPosition = new Vector3(fillSprite.transform.position.x, fillSprite.GetComponent<BoxCollider2D>().bounds.center.y, mainCamera.transform.position.z);
+            
             Vector3 velocity = Vector3.zero;
             float targetTime = 0.3f;
 
             //mainCamera.transform.position = Vector3.SmoothDamp(mainCamera.transform.position, targetPosition, ref velocity, targetTime);
-            mainCamera.transform.position = Vector3.MoveTowards(new Vector3(mainCamera.transform.position.x, mainCamera.transform.position.y, mainCamera.transform.position.z), new Vector3(fillSprite.transform.position.x, fillSprite.GetComponent<BoxCollider2D>().bounds.center.y, mainCamera.transform.position.z), targetTime);
+            mainCamera.transform.position = Vector3.MoveTowards(new Vector3(mainCamera.transform.position.x, mainCamera.transform.position.y, mainCamera.transform.position.z), targetPosition, targetTime);
 
             
 
@@ -53,6 +61,8 @@ public class Zoom : MonoBehaviour
 
         
     }
+
+    
 
 
 }

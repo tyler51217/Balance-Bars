@@ -537,6 +537,7 @@ GameObject:
   - component: {fileID: 168837418}
   - component: {fileID: 168837419}
   - component: {fileID: 168837417}
+  - component: {fileID: 168837420}
   m_Layer: 0
   m_Name: BorderRight
   m_TagString: Untagged
@@ -630,6 +631,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &168837420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168837416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59974fc3ab4ab5149ae4b0283dc1cf50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillSprite: {fileID: 62590558}
 --- !u!1 &225511296
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,8 +718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9dc88fca9af7564a8463e421f128515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillSprite: {fileID: 0}
-  classicMode: {fileID: 0}
+  fillSprite: {fileID: 975894245}
 --- !u!81 &225511299
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1869,6 +1882,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 168837420}
+          m_TargetAssemblyTypeName: TargetZoom, Assembly-CSharp
+          m_MethodName: changeSprite
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 3
     callback:
       m_PersistentCalls:
@@ -1876,6 +1901,18 @@ MonoBehaviour:
         - m_Target: {fileID: 168837417}
           m_TargetAssemblyTypeName: ClassicMode, Assembly-CSharp
           m_MethodName: OnButtonChange
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 168837420}
+          m_TargetAssemblyTypeName: TargetZoom, Assembly-CSharp
+          m_MethodName: changeSprite
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2211,6 +2248,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1805128061}
+          m_TargetAssemblyTypeName: TargetZoom, Assembly-CSharp
+          m_MethodName: changeSprite
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 3
     callback:
       m_PersistentCalls:
@@ -2218,6 +2267,18 @@ MonoBehaviour:
         - m_Target: {fileID: 1805128058}
           m_TargetAssemblyTypeName: ClassicMode, Assembly-CSharp
           m_MethodName: OnButtonChange
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1805128061}
+          m_TargetAssemblyTypeName: TargetZoom, Assembly-CSharp
+          m_MethodName: changeSprite
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2402,6 +2463,7 @@ GameObject:
   - component: {fileID: 1805128059}
   - component: {fileID: 1805128060}
   - component: {fileID: 1805128058}
+  - component: {fileID: 1805128061}
   m_Layer: 0
   m_Name: BorderLeft
   m_TagString: Untagged
@@ -2495,6 +2557,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1805128061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805128057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59974fc3ab4ab5149ae4b0283dc1cf50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillSprite: {fileID: 975894245}
 --- !u!1 &1905940878
 GameObject:
   m_ObjectHideFlags: 0

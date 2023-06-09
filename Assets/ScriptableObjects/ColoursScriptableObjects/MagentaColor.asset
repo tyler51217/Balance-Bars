@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 420a84cd31bcd3b4c983bb6780edc3dd, type: 3}
-  m_Name: MegentaColor
+  m_Name: MagentaColor
   m_EditorClassIdentifier: 
   id: 108
   cost: 200

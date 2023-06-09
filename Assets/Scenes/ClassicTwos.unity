@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 176793237}
   - component: {fileID: 176793238}
   - component: {fileID: 176793239}
+  - component: {fileID: 176793236}
   m_Layer: 0
   m_Name: BorderLeft
   m_TagString: Untagged
@@ -286,6 +287,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &176793236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176793235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59974fc3ab4ab5149ae4b0283dc1cf50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillSprite: {fileID: 1110767547}
 --- !u!4 &176793237
 Transform:
   m_ObjectHideFlags: 0
@@ -2067,6 +2081,7 @@ GameObject:
   - component: {fileID: 1560058333}
   - component: {fileID: 1560058334}
   - component: {fileID: 1560058335}
+  - component: {fileID: 1560058332}
   m_Layer: 0
   m_Name: BorderRight
   m_TagString: Untagged
@@ -2074,6 +2089,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1560058332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560058331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59974fc3ab4ab5149ae4b0283dc1cf50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillSprite: {fileID: 1489430123}
 --- !u!4 &1560058333
 Transform:
   m_ObjectHideFlags: 0
@@ -2229,6 +2257,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1560058332}
+          m_TargetAssemblyTypeName: TargetZoom, Assembly-CSharp
+          m_MethodName: changeSprite
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 3
     callback:
       m_PersistentCalls:
@@ -2236,6 +2276,18 @@ MonoBehaviour:
         - m_Target: {fileID: 1560058335}
           m_TargetAssemblyTypeName: ClassicMode, Assembly-CSharp
           m_MethodName: OnButtonChange
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1560058332}
+          m_TargetAssemblyTypeName: TargetZoom, Assembly-CSharp
+          m_MethodName: changeSprite
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2589,7 +2641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9dc88fca9af7564a8463e421f128515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillSprite: {fileID: 0}
+  fillSprite: {fileID: 1110767547}
   classicMode: {fileID: 0}
 --- !u!81 &1763708170
 AudioListener:
@@ -2873,6 +2925,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 176793236}
+          m_TargetAssemblyTypeName: TargetZoom, Assembly-CSharp
+          m_MethodName: changeSprite
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 3
     callback:
       m_PersistentCalls:
@@ -2880,6 +2944,18 @@ MonoBehaviour:
         - m_Target: {fileID: 176793239}
           m_TargetAssemblyTypeName: ClassicMode, Assembly-CSharp
           m_MethodName: OnButtonChange
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 176793236}
+          m_TargetAssemblyTypeName: TargetZoom, Assembly-CSharp
+          m_MethodName: changeSprite
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
