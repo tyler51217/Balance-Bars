@@ -8,8 +8,4 @@ public class ShopItem : ScriptableObject
     public new string name;
     public bool owned;
     public Sprite sprite;
-
-
-
-
 }

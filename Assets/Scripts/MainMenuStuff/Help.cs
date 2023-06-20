@@ -5,39 +5,20 @@ using UnityEngine.UI;
 
 public class Help : MonoBehaviour
 {
-    
-    
-
     private void Start() //only runs when HelpPanel is .SetActive
     {
-        
-        
-        //check playerprefs if open on start
         if(PlayerPrefs.GetInt("IsOn", 0) == 0)
         {
-            
             ShowHelpWindow();
-            
         }
         else
         {
             HideHelpWindow();
         }
-
-        
-        
-
     }
-
-    
-
-
-
     public void ShowHelpWindow()
     {
         gameObject.SetActive(true);
-
-
     }
 
     public void HideHelpWindow()
@@ -45,8 +26,4 @@ public class Help : MonoBehaviour
         gameObject.SetActive(false);
         PlayerPrefs.SetInt("IsOn", 1);
     }
-
-    
-
-
 }

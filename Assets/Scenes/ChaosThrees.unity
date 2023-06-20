@@ -430,6 +430,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillSprite: {fileID: 1637854680}
+  hearts:
+  - {fileID: 1662230470}
+  - {fileID: 934059466}
+  - {fileID: 1300838478}
   fillCollider: {fileID: 1637854677}
   scoreboard: {fileID: 1339521972}
   gameOverScreen: {fileID: 1969574218}
@@ -1179,6 +1183,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillSprite: {fileID: 474684309}
+  hearts:
+  - {fileID: 1662230470}
+  - {fileID: 934059466}
+  - {fileID: 1300838478}
   fillCollider: {fileID: 474684305}
   scoreboard: {fileID: 1339521972}
   gameOverScreen: {fileID: 1969574218}
@@ -3148,6 +3156,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillSprite: {fileID: 797017755}
+  hearts:
+  - {fileID: 1662230470}
+  - {fileID: 934059466}
+  - {fileID: 1300838478}
   fillCollider: {fileID: 797017752}
   scoreboard: {fileID: 1339521972}
   gameOverScreen: {fileID: 1969574218}

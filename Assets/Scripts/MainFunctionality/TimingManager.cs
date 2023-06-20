@@ -5,12 +5,11 @@ using UnityEngine;
 
 public class TimingManager : MonoBehaviour //timing manager is required for gamemodes with multiple bars
 {
-    
     public List<ClassicMode> gamesList;
     private List<float> timers;
 
     private bool isAnyGameStarted;
-    private float timeLeft = 3f; //3 seconds
+    private float timeLeft = 3f;
 
     public GameOverScreen gameOverScreen;
     public Scoreboard scoreboard;
@@ -71,8 +70,5 @@ public class TimingManager : MonoBehaviour //timing manager is required for game
     private void ResetTimer(int index)
     {
         timers[index] = timeLeft;
-        
     }
-
-
 }

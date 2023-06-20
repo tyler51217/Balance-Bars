@@ -208,19 +208,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 436b83c136f51d84d8483ebab240d0d8, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 1404698355}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -540,11 +540,11 @@ RectTransform:
   - {fileID: 219082060}
   - {fileID: 335385859}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1755, y: -24.000008}
+  m_AnchoredPosition: {x: -1884, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26711952
@@ -795,11 +795,11 @@ RectTransform:
   - {fileID: 873185071}
   - {fileID: 935803423}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1504, y: -24.000008}
+  m_AnchoredPosition: {x: -1633, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &82674988
@@ -1657,11 +1657,11 @@ RectTransform:
   - {fileID: 1438219106}
   - {fileID: 1856699965}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 504, y: -24.000008}
+  m_AnchoredPosition: {x: 375, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &208666536
@@ -2213,19 +2213,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 1ec297c162650084cb885514628dedfd, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 1623704120}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2613,19 +2613,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 621a727056073a546981641acc85527a, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 26711952}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2787,11 +2787,11 @@ RectTransform:
   - {fileID: 1080918429}
   - {fileID: 1406115068}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3014, y: -24.000008}
+  m_AnchoredPosition: {x: 2885, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &340585447
@@ -3246,19 +3246,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: acac611af9cbd8f438b59b37d24031c0, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 1435064570}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3420,11 +3420,11 @@ RectTransform:
   - {fileID: 1655426581}
   - {fileID: 811358045}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249, y: -24.000011}
+  m_AnchoredPosition: {x: -378, y: -24.000011}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &385922260
@@ -3675,11 +3675,11 @@ RectTransform:
   - {fileID: 697011668}
   - {fileID: 965978244}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1253, y: -24.000008}
+  m_AnchoredPosition: {x: -1382, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &458521238
@@ -3901,19 +3901,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: d6fd55cab14d9434d933bd5518c38a9a, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 1322148585}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4079,7 +4079,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2508, y: -24.000008}
+  m_AnchoredPosition: {x: -2384, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &506370755
@@ -4215,85 +4215,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532263918}
-  m_CullTransparentMesh: 1
---- !u!1 &532738334
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 532738335}
-  - component: {fileID: 532738337}
-  - component: {fileID: 532738336}
-  m_Layer: 5
-  m_Name: CostText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &532738335
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532738334}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1242853420}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -116.16, y: 67}
-  m_SizeDelta: {x: 232.98, y: 44.401}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &532738336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532738334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 39
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Cost: 00000'
---- !u!222 &532738337
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532738334}
   m_CullTransparentMesh: 1
 --- !u!1 &541108370
 GameObject:
@@ -4532,85 +4453,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574520985}
   m_CullTransparentMesh: 1
---- !u!1 &581604790
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 581604791}
-  - component: {fileID: 581604793}
-  - component: {fileID: 581604792}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &581604791
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581604790}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1426682415}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &581604792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581604790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 43
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Purchase
---- !u!222 &581604793
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581604790}
-  m_CullTransparentMesh: 1
 --- !u!1 &606611007
 GameObject:
   m_ObjectHideFlags: 0
@@ -4804,7 +4646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2762, y: -24.000008}
+  m_AnchoredPosition: {x: -2638, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &613903732
@@ -4897,11 +4739,11 @@ RectTransform:
   - {fileID: 1357849551}
   - {fileID: 780254841}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1257, y: -24.000008}
+  m_AnchoredPosition: {x: 1128, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &618417096
@@ -6004,11 +5846,11 @@ RectTransform:
   - {fileID: 1650501914}
   - {fileID: 1540610717}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2261, y: -24.000008}
+  m_AnchoredPosition: {x: 2132, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767673429
@@ -6151,19 +5993,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 618417096}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6533,19 +6375,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 0c54793d4a2f7ad41a636d0183944123, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 385922260}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6628,11 +6470,11 @@ RectTransform:
   - {fileID: 1229291428}
   - {fileID: 1704773626}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -24.000008}
+  m_AnchoredPosition: {x: -127, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &814032371
@@ -6725,11 +6567,11 @@ RectTransform:
   - {fileID: 126970145}
   - {fileID: 1155810921}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2010, y: -24.000008}
+  m_AnchoredPosition: {x: 1881, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &814927651
@@ -7385,11 +7227,11 @@ RectTransform:
   - {fileID: 1649447242}
   - {fileID: 1851201815}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1002, y: -24.000008}
+  m_AnchoredPosition: {x: -1131, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925073241
@@ -7532,19 +7374,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: b2936cd6afa694041b71fea1395d4690, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 82674988}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7756,19 +7598,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 1f04987eb608abd478c8aa1dd929ec79, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 458521238}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8990,19 +8832,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 8980dd10f816a484fbb480c13d072765, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 814927651}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9049,81 +8891,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155810920}
-  m_CullTransparentMesh: 1
---- !u!1 &1156531607
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1156531608}
-  - component: {fileID: 1156531610}
-  - component: {fileID: 1156531609}
-  m_Layer: 5
-  m_Name: ShopItemImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1156531608
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156531607}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1242853420}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 30}
-  m_SizeDelta: {x: 130, y: 130}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1156531609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156531607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1156531610
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156531607}
   m_CullTransparentMesh: 1
 --- !u!1 &1174558009
 GameObject:
@@ -9584,19 +9351,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 1f3467b01b12b384ca02efed495199a2, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 1302067540}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9644,103 +9411,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232712841}
   m_CullTransparentMesh: 1
---- !u!1 &1242853419
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1242853420}
-  - component: {fileID: 1242853423}
-  - component: {fileID: 1242853422}
-  - component: {fileID: 1242853421}
-  m_Layer: 5
-  m_Name: ShopItemPanel (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1242853420
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242853419}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1625823809}
-  - {fileID: 532738335}
-  - {fileID: 1156531608}
-  - {fileID: 1426682415}
-  m_Father: {fileID: 1841985990}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2006, y: -24.000008}
-  m_SizeDelta: {x: 232.65588, y: 255.808}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1242853421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242853419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e1e2356e28d32c438f57eb09ff67ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shopItem: {fileID: 11400000, guid: d6fd55cab14d9434d933bd5518c38a9a, type: 2}
-  nameText: {fileID: 1625823810}
-  img: {fileID: 1156531609}
-  costText: {fileID: 532738336}
-  buttonText: {fileID: 581604792}
---- !u!114 &1242853422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242853419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1242853423
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242853419}
-  m_CullTransparentMesh: 1
 --- !u!1 &1302067538
 GameObject:
   m_ObjectHideFlags: 0
@@ -9776,11 +9446,11 @@ RectTransform:
   - {fileID: 122015642}
   - {fileID: 1232712842}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -751, y: -24.000008}
+  m_AnchoredPosition: {x: -880, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1302067540
@@ -10031,7 +9701,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2257, y: -24}
+  m_AnchoredPosition: {x: -2133, y: -24}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1322148585
@@ -10328,19 +9998,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: ba55ebf2d820c764e91cceb266805d85, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 506370755}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10652,11 +10322,11 @@ RectTransform:
   - {fileID: 1786692409}
   - {fileID: 252945}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 253, y: -24.000008}
+  m_AnchoredPosition: {x: 124, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1404698355
@@ -10799,19 +10469,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 5e1f9646fb6ec0a468fd79b998196f86, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 340585447}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11017,151 +10687,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411117715}
   m_CullTransparentMesh: 1
---- !u!1 &1426682414
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1426682415}
-  - component: {fileID: 1426682418}
-  - component: {fileID: 1426682417}
-  - component: {fileID: 1426682416}
-  m_Layer: 5
-  m_Name: PurchaseButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1426682415
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426682414}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 581604791}
-  m_Father: {fileID: 1242853420}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.16593, y: -105.05}
-  m_SizeDelta: {x: 232.98, y: 44.799}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1426682416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426682414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1426682417}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1956678276}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1426682417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426682414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1426682418
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426682414}
-  m_CullTransparentMesh: 1
 --- !u!1 &1435064568
 GameObject:
   m_ObjectHideFlags: 0
@@ -11197,11 +10722,11 @@ RectTransform:
   - {fileID: 1984478489}
   - {fileID: 384852700}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 755, y: -24.000008}
+  m_AnchoredPosition: {x: 626, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1435064570
@@ -11968,19 +11493,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 581aacc0d2074e54a89be70d3b72ac20, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 767673429}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12676,19 +12201,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 7ee7b5d938280d54d9157fc2dc17c44e, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 1710849914}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12771,11 +12296,11 @@ RectTransform:
   - {fileID: 1595636461}
   - {fileID: 262469567}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2763, y: -24.000008}
+  m_AnchoredPosition: {x: 2634, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1623704120
@@ -12832,85 +12357,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623704118}
-  m_CullTransparentMesh: 1
---- !u!1 &1625823808
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1625823809}
-  - component: {fileID: 1625823811}
-  - component: {fileID: 1625823810}
-  m_Layer: 5
-  m_Name: NameText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1625823809
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625823808}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1242853420}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1625823810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625823808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Colour1
---- !u!222 &1625823811
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1625823808}
   m_CullTransparentMesh: 1
 --- !u!1 &1626782605
 GameObject:
@@ -12997,19 +12443,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 472558b2d579d45459782dfba5d31cec, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 1805912981}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13629,11 +13075,11 @@ RectTransform:
   - {fileID: 1312054971}
   - {fileID: 2126418511}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2512, y: -24.000008}
+  m_AnchoredPosition: {x: 2383, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1677332835
@@ -13934,19 +13380,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: e666d80e551dbec45bec5d3762050501, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 814032371}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14029,11 +13475,11 @@ RectTransform:
   - {fileID: 1992417970}
   - {fileID: 1614236947}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1508, y: -24.000008}
+  m_AnchoredPosition: {x: 1379, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1710849914
@@ -14903,7 +14349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3014.67, y: -24.000008}
+  m_AnchoredPosition: {x: -2890.67, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1805912981
@@ -15046,19 +14492,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: e9256dea4d6b1874186b9019c0ab34d4, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 1991902009}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15176,7 +14622,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <-- Back
+  m_Text: "\u2190 Back"
 --- !u!222 &1840412158
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15220,7 +14666,6 @@ RectTransform:
   - {fileID: 613903731}
   - {fileID: 506370754}
   - {fileID: 1322148584}
-  - {fileID: 1242853420}
   - {fileID: 26711951}
   - {fileID: 82674987}
   - {fileID: 458521237}
@@ -15246,8 +14691,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2810.7488, y: -271}
-  m_SizeDelta: {x: 6261.4995, y: 305.09}
+  m_AnchoredPosition: {x: 2686.0461, y: -271}
+  m_SizeDelta: {x: 6012.0933, y: 305.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1841985991
 MonoBehaviour:
@@ -15387,19 +14832,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 4388d41ca8f1c4a40be2d215344046c4, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 925073241}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15532,19 +14977,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 03e98af7558145d43bd430ae5d7fa6f6, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 208666536}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15835,19 +15280,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: af9fc11d40f4b914b853ed4a7f8b26dd, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 2132904267}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16172,19 +15617,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 387e532ec954efa41b003a0008dcb5a9, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 2064041876}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16342,11 +15787,11 @@ RectTransform:
   - {fileID: 148410075}
   - {fileID: 1825846235}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1759, y: -24}
+  m_AnchoredPosition: {x: 1630, y: -24}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1991902009
@@ -16625,6 +16070,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 676622525fc97e6409e0e2e81d847dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameTypeButtonsText: []
+  gameModeButtonsText: []
 --- !u!1 &2011830484
 GameObject:
   m_ObjectHideFlags: 0
@@ -16994,11 +16441,11 @@ RectTransform:
   - {fileID: 1660474150}
   - {fileID: 1979460679}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500, y: -24.000008}
+  m_AnchoredPosition: {x: -629, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2064041876
@@ -17216,19 +16663,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 613cf83a1b446cd41a847256b27f4eea, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 1677332835}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17311,11 +16758,11 @@ RectTransform:
   - {fileID: 1950110074}
   - {fileID: 1929279352}
   m_Father: {fileID: 1841985990}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1006, y: -24.000008}
+  m_AnchoredPosition: {x: 877, y: -24.000008}
   m_SizeDelta: {x: 232.65588, y: 255.808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2132904267
@@ -17682,19 +17129,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1956678276}
         m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: Purchase
+        m_MethodName: PurchaseColor
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: a3b92e96618cc4e4c8f1593c057ac913, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ShopItem, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: a1605c46991e5734c989e886431d09bd, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ShopColor, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShopColorDisplay, Assembly-CSharp
-        m_MethodName: UpdateOwned
+      - m_Target: {fileID: 613903732}
+        m_TargetAssemblyTypeName: ShopDisplay, Assembly-CSharp
+        m_MethodName: CheckEquipped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

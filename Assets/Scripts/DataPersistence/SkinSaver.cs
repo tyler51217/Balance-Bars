@@ -10,9 +10,6 @@ public class SkinSaver : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         Debug.Log("SkinSaver load called");
-
-
-
         SkinSaver.ebsn = data.equippedButtonSkinName;
         SkinSaver.ecn = data.equippedColorName;
     }

@@ -7,9 +7,6 @@ public static class Lives : object
     public static int health = 3;
     public static GameObject[] hearts;
 
-
-
-
     public static void Start()
     {
         health = 2;
@@ -31,8 +28,4 @@ public static class Lives : object
     {
         return health;
     }
-
-
-
-    
 }

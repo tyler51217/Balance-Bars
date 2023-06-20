@@ -1512,6 +1512,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillSprite: {fileID: 730416869}
+  hearts:
+  - {fileID: 933958256}
+  - {fileID: 438068017}
+  - {fileID: 1289387569}
   fillCollider: {fileID: 730416865}
   scoreboard: {fileID: 1366556056}
   gameOverScreen: {fileID: 571854589}
@@ -1946,7 +1950,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fillSprite: {fileID: 730416869}
-  classicMode: {fileID: 1366556057}
 --- !u!1 &1698672551
 GameObject:
   m_ObjectHideFlags: 0
